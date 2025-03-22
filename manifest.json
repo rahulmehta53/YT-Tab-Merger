@@ -1,14 +1,15 @@
 {
     "manifest_version": 3,
     "name": "YouTube Tab Redirect",
-    "version": "1.0",
+    "version": "1.1",
     "permissions": [
-        "tabs"
+        "tabs",
+        "scripting"
+    ],
+    "host_permissions": [
+        "*://www.youtube.com/watch*"
     ],
     "background": {
         "service_worker": "background.js"
-    },
-    "host_permissions": [
-        "*://www.youtube.com/watch*"
-    ]
+    }
 }
